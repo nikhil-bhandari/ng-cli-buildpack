@@ -149,6 +149,10 @@ build_dependencies() {
 header "Building dependencies"
 build_dependencies | output "$LOG_FILE"
 
+npm install -g @angular/cli
+npm install -g http-server
+ng build --prod
+
 cache_build() {
   local cache_directories=$(get_cache_directories)
 
