@@ -151,6 +151,7 @@ build_dependencies() {
 header "Building dependencies"
 npm install -g @angular/cli
 npm install -g http-server
+npm install --only=dev
 build_dependencies | output "$LOG_FILE"
 
 ng build --prod
